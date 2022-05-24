@@ -18,8 +18,8 @@ the_post_navigation(
   )
 );
 
-comments_open() || get_comments_number(); {
-comments_template();
+if( comments_open() || get_comments_number() ) {
+   comments_template();
 }
 endwhile;
 ?> 
